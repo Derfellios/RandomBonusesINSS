@@ -1,0 +1,6 @@
+
+
+Randomizes the value of each bonus by the given amount.  
+For example, if you set the maximum subtraction to 1 and maximum addition to 2, each bonus will have its value changed by -1, 0, +1, or +2 randomly when the game starts.
+
+For "Biomes of America" and "Landria" the mod only alters those of visible bonuses (no mega-bonuses though)
