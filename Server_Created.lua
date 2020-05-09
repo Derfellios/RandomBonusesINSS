@@ -15,12 +15,18 @@ function Server_Created(game, settings)
 			end	
 		end
 		if (bonus.Amount > 0 or Mod.Settings.AllowNegative) and Allowed then 
-			local rndAmount = math.random(-Mod.Settings.RandomizeAmountMin, Mod.Settings.RandomizeAmountMax);
-
+		    local rndAmount = math.random(-Mod.Settings.RandomizeAmountMin, Mod.Settings.RandomizeAmountMax);
+		    if Mod.Settings.TimiRandom then
+			    local BonusSize = 0;
+				for _,_ in pairs( bonus.Territories ) do
+					BonusSize = BonusSize + 1;
+				end
+				rndAmount = math.random(BonusSize - bonus.Amount-2, BonusSize- bonus.Amount-1);
+			end
 			if (rndAmount ~= 0) then --don't do anything if we're not changing the bonus.  We could leave this check off and it would work, but it show up in Settings as an overridden bonus when it's not.
 
 				local newValue = bonus.Amount + rndAmount;
-
+                print(bonus.Name, newValue);
 				-- don't take a positive or zero bonus negative unless AllowNegative was checked.
 				if (newValue < 0 and not Mod.Settings.AllowNegative) then
 					newValue = 0;

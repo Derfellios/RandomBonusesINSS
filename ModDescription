@@ -4,3 +4,5 @@ Randomizes the value of each bonus by the given amount.
 For example, if you set the maximum subtraction to 1 and maximum addition to 2, each bonus will have its value changed by -1, 0, +1, or +2 randomly when the game starts.
 
 For "Biomes of America" and "Landria" the mod only alters those of visible bonuses (no mega-bonuses though)
+
+Timi Random has the following rules: Sets bonus values of bonuses of size n to n-1 or n-2 with 50% chance. Overwrites maximum subtraction/addition per bonus.
