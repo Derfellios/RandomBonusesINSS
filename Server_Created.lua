@@ -26,7 +26,6 @@ function Server_Created(game, settings)
 			if (rndAmount ~= 0) then --don't do anything if we're not changing the bonus.  We could leave this check off and it would work, but it show up in Settings as an overridden bonus when it's not.
 
 				local newValue = bonus.Amount + rndAmount;
-                print(bonus.Name, newValue);
 				-- don't take a positive or zero bonus negative unless AllowNegative was checked.
 				if (newValue < 0 and not Mod.Settings.AllowNegative) then
 					newValue = 0;
