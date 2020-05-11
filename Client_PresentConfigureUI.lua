@@ -32,7 +32,7 @@ function Client_PresentConfigureUI(rootParent)
 	TimiRandomCheckBox = UI.CreateCheckBox(vert).SetText('Play Timi Random').SetIsChecked(TimiRandom);
 
 
-	UI.CreateLabel(vert).SetText("Normally, negative bonuses will not be modified and bonuses will not go negative.  However, you can check the \"Allow Negative Bonuses\" box to make this happen.");
+	UI.CreateLabel(vert).SetText("Normally, negative bonuses will not be modified and bonuses will not go negative. However, checking this box allows this.");
 
 	allowNegativeBonusesCheckBox = UI.CreateCheckBox(vert).SetText('Allow Negative Bonuses').SetIsChecked(initialNegatives);
 

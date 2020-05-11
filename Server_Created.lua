@@ -3,7 +3,8 @@ function Server_Created(game, settings)
 	local MapID = game.Map.ID;
 	
     for _, bonus in pairs(game.Map.Bonuses) do
-		--skip negative bonuses unless AllowNegative was checked
+	
+	    -- Hardcoded cases for the INSS maps
 		local Allowed = true;
 		if MapID == 69965 then
 			if bonus.ID > 42 then
@@ -14,6 +15,8 @@ function Server_Created(game, settings)
 				Allowed = false;
 			end	
 		end
+		
+		--skip negative bonuses unless AllowNegative was checked
 		if (bonus.Amount > 0 or Mod.Settings.AllowNegative) and Allowed then 
 		    if Mod.Settings.TimiRandom then
 			    local BonusSize = 0;

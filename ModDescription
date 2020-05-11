@@ -1,8 +1,8 @@
+This Warzone mod extends Fizzer's randomized bonuses mod in three ways:
 
+1) You can choose how much randomly can be subtracted and how much can be added seperatedly.
 
-Randomizes the value of each bonus by the given amount.  
-For example, if you set the maximum subtraction to 1 and maximum addition to 2, each bonus will have its value changed by -1, 0, +1, or +2 randomly when the game starts.
+2) For some INSS templates (at the moment only "Landria" and "Biomes of America"), the bonuses which should be altered are hard-coded. This makes rnadomized bonuses and INSS playable.
 
-For "Biomes of America" and "Landria" the mod only alters those of visible bonuses (no mega-bonuses though)
+3) The new randimization mode "Timi random" which is inspired by Timinator. Each bonus value is set to n-1 or n-2, each with a 50% chance. This overwrites the maximum subtraction/addition per bonus
 
-Timi Random has the following rules: Sets bonus values of bonuses of size n to n-1 or n-2 with 50% chance. Overwrites maximum subtraction/addition per bonus.
